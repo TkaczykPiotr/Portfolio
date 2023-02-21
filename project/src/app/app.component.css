@@ -1,0 +1,36 @@
+mat-toolbar {
+  background: #021429;
+  color: white;
+}
+
+mat-button-toggle-group{
+  border: none;
+  margin-left: auto;
+}
+mat-button-toggle-group .mat-button-toggle {
+  border-left: none;
+  color: white;
+}
+mat-button-toggle:hover {
+  background-color: #405a63;
+}
+
+mat-button-toggle.active {
+  background-color: #405a63;
+}
+
+
+mat-button-toggle{
+  margin-left: 1em;
+  background: #021429;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.content{
+  background: #071b33;
+  height: 100vh;
+
+  padding: 5%
+}
