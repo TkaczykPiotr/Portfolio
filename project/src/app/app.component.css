@@ -30,7 +30,8 @@ mat-button-toggle{
 
 .content{
   background: #071b33;
-  height: 100vh;
+  min-height: 150vh;
+  max-height: 300vh;
 
   padding: 5%
 }
