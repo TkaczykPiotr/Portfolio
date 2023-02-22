@@ -2,14 +2,18 @@
 <div class="container mat-elevation-z8">
   <div class="box">
     <div class="header">
-      <h2>System sprzedaży biletów kolejowych [React + Spring Boot + PostgreSQL]</h2>
+      <h2>System sprzedaży biletów kolejowych [React + Spring Boot + PostgreSQL]
+          <button mat-fab extended color="primary" onClick="window.open('//google.com')">
+            Link to the project
+          </button>
+      </h2>
 
     </div>
     <div class="info">
-      <p>GitHub: </p>
+
       <p>
         System został stworzony wykorzystując wzorzec MVC. Do wykonania aplikacji internetowej wykorzystano framework React.
-        Za część funkcjonalną odpowiedzialny jest framework Spring Boot wraz z bazą danych PostgreSQL. Funckjonalności wystepujące w systemie:
+        Za część funkcjonalną odpowiedzialny jest framework Spring Boot wraz z bazą danych PostgreSQL. Funkcjonalności wystepujące w systemie:
       </p>
       <p>- Logowanie i rejestracja użytkowników</p>
       <p>- Logowanie administratora</p>
@@ -21,17 +25,28 @@
       <p>- Płatności</p>
       <p>- Wyswietlanie i pobieranie zakupionych biletów</p>
     </div>
-    <div class="image">COntent</div>
+    <div class="image">
+      <button mat-fab color="primary"  (click)="previousImageProjectOne()" class="btn float-left">
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <img [src]="currentImage" />
+      <button mat-fab color="primary" (click)="nextImageProjectOne()" class="btn float-right">
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </div>
 
   </div>
   <div class="box">
     <div class="header">
-      <h2>System sprzedaży biletów autobusowych [Angular + Firebase] (nadal rozwijany)</h2>
+      <h2>System sprzedaży biletów autobusowych [Angular + Firebase] (nadal rozwijany)
+        <button mat-fab extended color="primary" onClick="window.open('//google.com')">
+          Link to the project
+         </button>
+      </h2>
       </div>
          <div class="info">
-          <p>GitHub: </p>
            <p>Do wykonania aplikacji internetowej wykorzystano framework Angular, w którym również wykonano wszystkie niezbędne funkcjonalności.
-            Funkcje bazy danych pełni tutaj narzędzie Firebase. Funckjonalności wystepujące w systemie:
+            Funkcje bazy danych pełni tutaj narzędzie Firebase. Funkcjonalności wystepujące w systemie:
            </p>
            <p>- Logowanie i rejestracja użytkowników</p>
            <p>- Wyszukiwanie połączeń autobusowych</p>
@@ -41,16 +56,27 @@
            <p>- Wyswietlanie zakupionych biletów</p>
            <p>- Pobieranie biletów wraz z kodem QR</p>
          </div>
-         <div class="image">COntent</div>
+         <div class="image">
+          <button mat-fab color="primary"  (click)="previousImageProjectOne()" class="btn float-left">
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+          <img [src]="currentImage" />
+          <button mat-fab color="primary" (click)="nextImageProjectOne()" class="btn float-right">
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+        </div>
   </div>
   <div class="box">
     <div class="header">
-      <h2>Gra przeglądarkowa Football Menager [React]</h2>
+      <h2>Gra przeglądarkowa Football Menager [React]
+        <button mat-fab extended color="primary" onClick="window.open('//google.com')">
+          Link to the project
+         </button>
+      </h2>
       </div>
          <div class="info">
-          <p>GitHub: </p>
            <p>Do wykonania aplikacji internetowej wykorzystano framework React. Jest to gra singleplayer, pozwalająca wcielić się w menagera piłkarskiego
-            i prowadzic wybraną drużynę w lidze hiszpańskiej. Funckjonalności wystepujące w grze:
+            i prowadzic wybraną drużynę w lidze hiszpańskiej. Funkcjonalności wystepujące w grze:
            </p>
            <p>- Wybieranie drużyny</p>
            <p>- Wyswietlanie informacji o drużynie</p>
@@ -63,7 +89,15 @@
            <p>- Strona pomocy dla gracza</p>
            <p>- Gra: rozpoczynanie i zatrzymywanie gry, wyświetlanie wyniku oraz czasu, zmiana systemu i graczy podczas gry, wyświetlanie na bierząco statystyk z meczu</p>
          </div>
-         <div class="image">COntent</div>
+         <div class="image">
+          <button mat-fab color="primary"  (click)="previousImageProjectOne()" class="btn float-left">
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+          <img [src]="currentImage" />
+          <button mat-fab color="primary" (click)="nextImageProjectOne()" class="btn float-right">
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+        </div>
   </div>
   <div class="box">
     <div class="header">

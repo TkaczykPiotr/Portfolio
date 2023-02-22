@@ -43,13 +43,36 @@
 
 .info p{
   color: white;
-  font-size: 1rem;;
+  font-size: 1.1rem;
+  font-family: Lato,sans-serif;
 }
 
-.image{
+.image {
   width: 50%;
   float: left;
   margin: 1rem;
   margin-left: 5%;
-  height: 200px;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.btn.float-right {
+  position: absolute;
+  top: 50%;
+  right: -30px; /* zmienione z left */
+  transform: translateY(-50%);
+}
+
+.btn.float-left {
+  position: absolute;
+  top: 50%;
+  left: -30px; /* dodane */
+  transform: translateY(-50%);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* skaluje obrazek, aby pokrył cały obszar kontenera */
 }
