@@ -16,12 +16,14 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ProjectsComponent,
+    ContactComponent,
 
   ],
   imports: [

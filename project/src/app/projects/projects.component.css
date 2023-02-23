@@ -5,7 +5,7 @@
   justify-content: space-between;
   gap: 1.5rem;
   box-shadow: 0px 0px 0px 0px ;
-  width: 70vw;
+  width: 80vw;
   height: auto;
   margin:auto;
 }
@@ -43,8 +43,10 @@
 
 .info p{
   color: white;
-  font-size: 1.1rem;
-  font-family: Lato,sans-serif;
+  font-size: 1.2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .image {
@@ -55,24 +57,25 @@
   height: 100%;
   position: relative;
   text-align: center;
+  box-shadow: 0px 0px 20px #0a1029;
 }
 
 .btn.float-right {
   position: absolute;
   top: 50%;
-  right: -30px; /* zmienione z left */
+  right: -30px;
   transform: translateY(-50%);
 }
 
 .btn.float-left {
   position: absolute;
   top: 50%;
-  left: -30px; /* dodane */
+  left: -30px;
   transform: translateY(-50%);
 }
 
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* skaluje obrazek, aby pokrył cały obszar kontenera */
+  object-fit: cover;
 }
