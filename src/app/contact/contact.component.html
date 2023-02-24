@@ -6,14 +6,14 @@
             <h2>Kontakt</h2>
             <p>Email: piotrtkaczyk21a@wp.pl
 
-            <button mat-fab extended color="accent" class="btn">
+            <button ngxClipboard [cbContent]="'piotrtkaczyk21a@wp.pl'" mat-fab extended color="accent" class="btn" >
               <mat-icon>alternate_email</mat-icon>
               Email
             </button>
           </p>
 
             <p>GitHub: https://github.com/TkaczykPiotr
-              <button mat-fab extended class="btn">
+              <button mat-fab extended class="btn" onClick="window.open('https://github.com/TkaczykPiotr')">
                 GitHub
               </button>
             </p>

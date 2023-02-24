@@ -12,6 +12,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ClipboardModule } from 'ngx-clipboard';
 
 
 import { AboutComponent } from './about/about.component';
@@ -35,7 +37,9 @@ import { ContactComponent } from './contact/contact.component';
     MatIconModule,
     MatButtonToggleModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
