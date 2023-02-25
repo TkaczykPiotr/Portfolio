@@ -14,11 +14,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ClipboardModule } from 'ngx-clipboard';
+import { NgxImageZoomModule} from 'ngx-image-zoom';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { DialogImageComponent } from './dialog-image/dialog-image.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
+    DialogImageComponent,
+
 
   ],
   imports: [
@@ -39,7 +44,9 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatButtonModule,
     MatSnackBarModule,
-    ClipboardModule
+    ClipboardModule,
+    NgxImageZoomModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

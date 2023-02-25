@@ -2,6 +2,38 @@
 <div class="container mat-elevation-z8">
   <div class="box">
     <div class="header">
+      <h2>System sprzedaży biletów autobusowych [Angular + Firebase] (nadal rozwijany)
+        <button mat-fab extended color="primary" onClick="window.open('https://github.com/TkaczykPiotr/BusApp')">
+          Link to the project
+         </button>
+      </h2>
+      </div>
+         <div class="info">
+           <p>
+            System ma na celu umożliwić klientom zakup biletów  jednorazowych i miesięcznych na przejazd autobusowy.
+            Do wykonania aplikacji internetowej wykorzystano framework Angular, w którym również wykonano wszystkie niezbędne funkcjonalności.
+            Funkcje bazy danych pełni tutaj narzędzie Firebase. Funkcjonalności wystepujące w systemie:
+           </p>
+           <p>- Logowanie i rejestracja użytkowników</p>
+           <p>- Wyszukiwanie połączeń autobusowych</p>
+           <p>- Wyswietlanie połączeń autobusowych</p>
+           <p>- Zapisywanie danych osobowych potrzebnych do zakupu</p>
+           <p>- Zakup biletu jednorazowego jak również miesięcznego na dane na połączenie kolejowe</p>
+           <p>- Wyswietlanie zakupionych biletów</p>
+           <p>- Pobieranie biletów wraz z kodem QR</p>
+         </div>
+         <div class="image">
+          <button mat-fab color="primary"  (click)="previousImageProjectTwo()" class="btn float-left">
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+          <img [src]="currentImageTwo" alt="" (click)="openDialog(currentImageTwo)"/>
+          <button mat-fab color="primary" (click)="nextImageProjectTwo()" class="btn float-right">
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+        </div>
+  </div>
+  <div class="box">
+    <div class="header">
       <h2>System sprzedaży biletów kolejowych [React + Spring Boot + PostgreSQL]
           <button mat-fab extended color="primary" onClick="window.open('https://github.com/TkaczykPiotr/TrainApp')">
             Link to the project
@@ -12,6 +44,7 @@
     <div class="info">
 
       <p>
+        Utworzony system ma na celu umożliwienie klientom zakup biletów na przejazd kolejowy poprzez aplikację internetową.
         System został stworzony wykorzystując wzorzec MVC. Do wykonania aplikacji internetowej wykorzystano framework React.
         Za część funkcjonalną odpowiedzialny jest framework Spring Boot wraz z bazą danych PostgreSQL. Funkcjonalności wystepujące w systemie:
       </p>
@@ -29,43 +62,14 @@
       <button mat-fab color="primary"  (click)="previousImageProjectOne()" class="btn float-left">
         <mat-icon>navigate_before</mat-icon>
       </button>
-      <img [src]="currentImageOne" />
+      <img [src]="currentImageOne" alt="" (click)="openDialog(currentImageOne)"/>
       <button mat-fab color="primary" (click)="nextImageProjectOne()" class="btn float-right">
         <mat-icon>navigate_next</mat-icon>
       </button>
     </div>
 
   </div>
-  <div class="box">
-    <div class="header">
-      <h2>System sprzedaży biletów autobusowych [Angular + Firebase] (nadal rozwijany)
-        <button mat-fab extended color="primary" onClick="window.open('https://github.com/TkaczykPiotr/BusApp')">
-          Link to the project
-         </button>
-      </h2>
-      </div>
-         <div class="info">
-           <p>Do wykonania aplikacji internetowej wykorzystano framework Angular, w którym również wykonano wszystkie niezbędne funkcjonalności.
-            Funkcje bazy danych pełni tutaj narzędzie Firebase. Funkcjonalności wystepujące w systemie:
-           </p>
-           <p>- Logowanie i rejestracja użytkowników</p>
-           <p>- Wyszukiwanie połączeń autobusowych</p>
-           <p>- Wyswietlanie połączeń autobusowych</p>
-           <p>- Zapisywanie danych osobowych potrzebnych do zakupu</p>
-           <p>- Zakup biletu jednorazowego jak również miesięcznego na dane na połączenie kolejowe</p>
-           <p>- Wyswietlanie zakupionych biletów</p>
-           <p>- Pobieranie biletów wraz z kodem QR</p>
-         </div>
-         <div class="image">
-          <button mat-fab color="primary"  (click)="previousImageProjectTwo()" class="btn float-left">
-            <mat-icon>navigate_before</mat-icon>
-          </button>
-          <img [src]="currentImageTwo" />
-          <button mat-fab color="primary" (click)="nextImageProjectTwo()" class="btn float-right">
-            <mat-icon>navigate_next</mat-icon>
-          </button>
-        </div>
-  </div>
+
   <div class="box">
     <div class="header">
       <h2>Gra przeglądarkowa Football Manager [React]
@@ -75,7 +79,9 @@
       </h2>
       </div>
          <div class="info">
-           <p>Do wykonania aplikacji internetowej wykorzystano framework React. Jest to gra singleplayer, pozwalająca wcielić się w menagera piłkarskiego
+           <p>
+            Stworzona aplikacja internetowa jest grą typu football menager.
+            Do wykonania aplikacji internetowej wykorzystano framework React. Jest to gra singleplayer, pozwalająca wcielić się w menagera piłkarskiego
             i prowadzic wybraną drużynę w lidze hiszpańskiej. Funkcjonalności wystepujące w grze:
            </p>
            <p>- Wybieranie drużyny</p>
@@ -93,7 +99,7 @@
           <button mat-fab color="primary"  (click)="previousImageProjectThree()" class="btn float-left">
             <mat-icon>navigate_before</mat-icon>
           </button>
-          <img [src]="currentImageThree" />
+          <img [src]="currentImageThree" (click)="openDialog(currentImageThree)"/>
           <button mat-fab color="primary" (click)="nextImageProjectThree()" class="btn float-right">
             <mat-icon>navigate_next</mat-icon>
           </button>

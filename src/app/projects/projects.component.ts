@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogImageComponent } from '../dialog-image/dialog-image.component';
 
 @Component({
   selector: 'app-projects',
@@ -6,8 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-
-  constructor(){}
 
   imageListProjectOne: any[] = [
     {url: "assets/img/train1.png"},
@@ -40,6 +40,22 @@ export class ProjectsComponent {
     {url: "assets/img/football7.png"},
     {url: "assets/img/football8.png"},
   ]
+
+  constructor(public dialog: MatDialog){}
+
+  openDialog(dataImg : string) {
+    const dialogRef = this.dialog.open(DialogImageComponent, {
+      data: { myData: dataImg }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+
+
+
 
   currentImageOne: string = this.imageListProjectOne[0].url;
   currentImageTwo: string = this.imageListProjectTwo[0].url;
