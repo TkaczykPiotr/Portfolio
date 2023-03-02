@@ -1,15 +1,18 @@
 mat-toolbar {
   background: #021429;
   color: white;
+
 }
 
 mat-button-toggle-group{
   border: none;
   margin-left: auto;
+  
 }
 mat-button-toggle-group .mat-button-toggle {
   border-left: none;
   color: white;
+  
 }
 mat-button-toggle:hover {
   background-color: #405a63;
