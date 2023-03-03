@@ -9,7 +9,7 @@
 }
 
 .bg-dark {
-  background-color: #071b33 !important;
+  background-color: #444 !important;
 }
 
 .navbar-collapse{
@@ -33,11 +33,11 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #572654;
+  color: #bc06b0;
 }
 
 .content{
-  background: #071b33;
+  background: #444;
   padding: 5%
 }
 
