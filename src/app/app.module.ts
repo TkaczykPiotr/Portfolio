@@ -16,6 +16,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ClipboardModule } from 'ngx-clipboard';
 import { NgxImageZoomModule} from 'ngx-image-zoom';
 import {MatDialogModule} from '@angular/material/dialog';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AboutComponent } from './about/about.component';
@@ -38,6 +39,7 @@ import { DialogImageComponent } from './dialog-image/dialog-image.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    NgbModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonToggleModule,
