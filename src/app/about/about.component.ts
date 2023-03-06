@@ -1,5 +1,5 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { Scroll } from '@angular/router';
+import { Component, ElementRef, HostListener, Renderer2, OnInit, ViewChild } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 
 @Component({
@@ -13,20 +13,28 @@ export class AboutComponent implements OnInit {
   previousPageYOffset = 0;
   private scrolledDown = false;
 
-  constructor(private elementRef: ElementRef) {}
-  
+
+  constructor(
+    private renderer: Renderer2,
+    private el: ElementRef,
+    private viewportScroller: ViewportScroller
+    ) {}
+
+    
+
   
   // @HostListener('window:scroll', ['$event'])
   // onScroll(event: Event) {
   //   const pageYOffset = window.pageYOffset;
   //   if (pageYOffset > this.previousPageYOffset && !this.scrolledDown) {
   //     this.scrolledDown = true;
-  //     this.scrollToNextSection();
+  //     setTimeout(() => {
+  //       this.scrollToNextSection();
+  //     }, 500);
   //   } else if (pageYOffset < this.previousPageYOffset) {
-      
+  //     this.scrolledDown = false;
   //   }
   //   this.previousPageYOffset = pageYOffset;
-
 
   // }
 
@@ -43,9 +51,6 @@ export class AboutComponent implements OnInit {
   scrollToNextSection(): void {
     const currentSection = document.querySelector('.scrollme.active')!;
     const nextSection = document.querySelectorAll('.scrollme:not(.active)')[this.tmp];
-
-    console.log(currentSection);
-    console.log(nextSection);
     console.log(this.tmp);
     if (nextSection) {
       currentSection.classList.remove('active');

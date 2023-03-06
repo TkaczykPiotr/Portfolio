@@ -96,6 +96,12 @@
   color: #fff;
 }
 
+@media (max-width: 991px){
+.scroll-btn  {
+  display: none;
+
+}}
+
 
 .scrollme {
   opacity: 2;
@@ -112,7 +118,7 @@
     padding-top: 40px;
     overflow: hidden;
     position: relative;
-    background-color: #524952;
+    background-color: #33806F;
     display: block;
     width: 100%;
 }
@@ -127,7 +133,7 @@
   height: 100%;
   background-position: center center;
   background-size: cover;
-  background-color: #545561;
+  background-color: #385557;
 }
 
 
@@ -156,7 +162,7 @@
   left: 0;
   width: 40%;
   height: 300px;
-  background: #5C5453;
+  background: #736A4D;
 }
 
 @media (max-width: 1600px){
@@ -190,12 +196,9 @@
   opacity: 1;
   -webkit-transition: -webkit-transform 1s cubic-bezier(.6,.2,.1,1) .8s,opacity 1s cubic-bezier(.6,.2,.1,1) .8s;
   transition: transform 1s cubic-bezier(.6,.2,.1,1) .8s,opacity 1s cubic-bezier(.6,.2,.1,1) .8s;
-
   display: flex;
   align-items: center;
 }
-
-
 
 .person-box{
   display: flex;
@@ -203,8 +206,6 @@
   margin-right: -15px;
   margin-left: -15px;
 }
-
-
 
 .col-lg-7{
   position: relative;
@@ -265,13 +266,19 @@ img{
 
 .iin p{
   color: white;
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: 'Alata',sans-serif;
+  font-size: 1.333em;
 }
+
+
 
 h5{
   line-height: 1.15;
   font-weight: 400;
   font-family: 'Alata',sans-serif;
-  font-size: 1.333em;
+  font-size: 2em;
   clear: both;
   color: white;
 }
@@ -350,7 +357,7 @@ h5{
   padding: 100px 0;
   overflow: hidden;
   position: relative;
-  background-color: #5C5357;
+
   display: block;
   width: 100%;
 }
@@ -454,7 +461,7 @@ h5{
   margin-top: 100px;
   overflow: hidden;
   position: relative;
-  background-color: #545561;
+  background-color: #786F6C;
   display: block;
   width: 100%;
 }
